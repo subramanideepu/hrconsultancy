@@ -79,51 +79,97 @@
   margin-top: 20px;
   font-size: 14px;
 }
+.hero-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #13547a, #80d0c7);
+}
+
+.hero-section h1, .hero-section h6 {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .hero-vector {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
+.footer-bottom {
+  background: rgba(0,0,0,0.2);
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: 14px;
+  margin-left: -20px;
+}
 
 
-        </style>
+
+/* ✅ Mobile Responsive */
+@media (max-width: 767px) {
+  /* .footer-bottom {
+    text-align: center;
+  } */
+  .footer-bottom p {
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+}
+
+ 
+      .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
+        xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' 
+        stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' 
+        d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+
+
+
+      
+      
+      </style>
     </head>
     <body id="top">
         
         <main>
-       <nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-            <img src="images/Hrconsultancy/logo1.png" alt="Logo" style="height:100px;">
-            <!-- <span>HR Consultancy</span> -->
-        </a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" background: linear-gradient(to right, #13547a, #80d0c7);">
+  <div class="container">
+     <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:500px;">
-            <ul class="navbar-nav ms-lg-5 me-lg-auto">
-                <!-- Home -->
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <!-- About -->
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <!-- Services Dropdown -->
-                <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                      <li><a class="dropdown-item" href="manpower.html">Manpower Consultancy</a></li>
-                <li><a class="dropdown-item" href="recruitment.html">Recruitment & Staffing</a></li>
-                <li><a class="dropdown-item" href="payroll.html">Payroll & HR Advisory</a></li>
-                <li><a class="dropdown-item" href="realestate.html">Real Estate Services</a></li>
-                    </ul>
-                </li>
-                <!-- Contact -->
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/Hrconsultancy/logo1.png" alt="Logo" style="height:60px;">
+    </a>
+
+    
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto"> <!-- ms-auto = push links right -->
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" 
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="manpower.html">Manpower Consultancy</a></li>
+            <li><a class="dropdown-item" href="recruitment.html">Recruitment & Staffing</a></li>
+            <li><a class="dropdown-item" href="payroll.html">Payroll & HR Advisory</a></li>
+            <li><a class="dropdown-item" href="realestate.html">Real Estate Services</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
+
  <!--<section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
                 <div class="container">
                     <div class="row">
@@ -496,7 +542,7 @@
       <div class="row">
 
         <!-- Brand -->
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
           <div class="footer-brand">
             <img src="images/Hrconsultancy/logo1.png" alt="Logo" class="footer-logo">
             <p>Your trusted partner for recruitment, staffing & HR solutions.</p>
@@ -504,7 +550,7 @@
         </div>
 
         <!-- Quick Links -->
-        <div class="col-lg-2 col-md-6 mb-4">
+         <div class="col-lg-2 col-md-6 col-12 mb-4">
           <h5>Quick Links</h5>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
@@ -515,8 +561,8 @@
         </div>
 
         <!-- Contact -->
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h5>Contact</h5>
+       <div class="col-lg-3 col-md-6 col-12 mb-4">
+              <h5>Contact</h5>
           <ul class="footer-contact">
             <li><i class="bi-telephone"></i> <a href="tel:9492393111">9492393111</a>, <a href="tel:9177776613">9177776613</a></li>
             <li><i class="bi-envelope"></i> <a href="mailto:info@hrconsultancy.com">info@hrconsultancy.com</a></li>
@@ -525,7 +571,7 @@
         </div>
 
         <!-- Social -->
-        <div class="col-lg-3 col-md-6 mb-4">
+       <div class="col-lg-3 col-md-6 col-12 mb-4">
           <h5>Follow Us</h5>
           <div class="social-icons">
             <a href="#" class="bi-facebook"></a>
@@ -571,7 +617,7 @@
 
 
 
-  <div class="footer-bottom text-center">
+  <div class="footer-bottom">
     <p>© 2025 HR Consultancy. All Rights Reserved.</p>
     <p>Design by <a href="https://www.senetra.in/" target="_blank">Senetra Technologies</a></p>
   </div>
