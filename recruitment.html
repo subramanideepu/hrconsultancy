@@ -3,137 +3,91 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Recruitment - HR Consulting</title>
+    <title>Recruitment & Staffing Hyderabad - N Consulting Solutions</title>
+    <meta name="description" content="Professional Recruitment & Staffing Consultancy in Hyderabad - Talent Acquisition, Executive Search, Temporary & Permanent Staffing, Payroll & HR Advisory by N Consulting Solutions">
 
-     <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">                        
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">        
-        <link href="css/templatemo-topic-listing.css" rel="stylesheet">         
+    <!-- CSS FILES -->        
+    <link rel="preconnect" href="https://fonts.googleapis.com">        
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">                        
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">        
+    <link href="css/templatemo-topic-listing.css" rel="stylesheet">         
+
     <style>
-         .site-footer {
-  background: #74c7c7;   /* Same as navbar */
-  color: #fff;
-  font-size: 15px;
-}
+      body {font-family:'Montserrat', sans-serif; margin:0; padding:0;}
+      .navbar {background:#74c7c7;}
+      .navbar .nav-link {color:#fff;}
+      .navbar .nav-link.active {font-weight:bold;}
+      .navbar-toggler {border-color:#fff;}
+      .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");}
 
-.footer-top {
-  padding: 50px 0 30px;
-}
+      /* Footer */
+      .site-footer {position: relative; z-index:1; background:#74c7c7; color:#fff; font-size:15px;}
+      .footer-top {padding:50px 0 30px;}
+      .footer-brand .footer-logo {height:80px; margin-bottom:15px;}
+      .footer-brand p {max-width:250px; line-height:1.6;}
+      .footer-links, .footer-contact {list-style:none; padding:0;}
+      .footer-links li, .footer-contact li {margin-bottom:10px;}
+      .footer-links a, .footer-contact a {color:#fff; text-decoration:none;}
+      .footer-links a:hover, .footer-contact a:hover {color:black;}
+      .footer-contact i {margin-right:8px; color:black;}
+      .social-icons a {display:inline-block; color:#fff; font-size:20px; margin-right:12px; transition:0.3s;}
+      .social-icons a:hover {color:black;}
+      .footer-bottom {background:rgba(0,0,0,0.2); padding:15px 0; margin-top:20px; font-size:14px; text-align:left;}
 
-.footer-brand .footer-logo {
-  height: 80px;
-  margin-bottom: 15px;
-}
-
-.footer-brand p {
-  max-width: 250px;
-  line-height: 1.6;
-}
-
-.footer-links,
-.footer-contact {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li,
-.footer-contact li {
-  margin-bottom: 10px;
-}
-
-.footer-links a,
-.footer-contact a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-links a:hover,
-.footer-contact a:hover {
-  color: black;
-}
-
-.footer-contact i {
-  margin-right: 8px;
-  color: black;
-}
-
-.social-icons a {
-  display: inline-block;
-  color: #fff;
-  font-size: 20px;
-  margin-right: 12px;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: black;
-}
-
-.footer-bottom {
-  background: rgba(0,0,0,0.2);
-  padding: 15px 0;
-  margin-top: 20px;
-  font-size: 14px;
-}
-      .about-hero {
-        background: url('images/Hrconsultancy/about_banner.jpg') center/cover no-repeat;
-        padding: 120px 0;
+      /* WhatsApp Floating Button */
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
         color: #fff;
-        text-align: center;
-      }
-      .about-hero h1 {
-        font-weight: 700;
-      }
-      .about-section p {
-        line-height: 1.8;
-      }
-      .why-choose-us .card {
-        border: none;
-        background: #f8f9fa;
-        padding: 25px;
-        text-align: center;
-        transition: 0.3s;
-      }
-      .why-choose-us .card:hover {
-        background: #74c7c7;
-        color: #fff;
-        transform: translateY(-5px);
-      }
-      .team-section .team-member {
-        text-align: center;
-      }
-      .team-section img {
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+        z-index: 1050; /* High z-index to stay above footer */
+      }
+      .whatsapp-float:hover {transform:scale(1.1); text-decoration:none;}
+
+      /* Hero & Services */
+      .service-card:hover {transform:translateY(-5px); transition:0.3s;}
+      .hero-section h6 {font-weight:500;}
+      @media (max-width:767px) {
+        .hero-section {height:auto; padding:60px 0;}
+        .hero-section img {margin-top:30px;}
+        .navbar-nav {text-align:left;}
+        .navbar .dropdown-menu {text-align:left;}
+        .footer-bottom{text-align: left;}
       }
     </style>
   </head>
   <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/Hrconsultancy/logo1.png" alt="Logo" style="height:80px;">
-        </a>
+        <a class="navbar-brand" href="index.html"><img src="images/Hrconsultancy/logo1.png" alt="N Consulting Solutions Logo" style="height:70px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:500px;">
-          <ul class="navbar-nav ms-lg-5 me-lg-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" data-bs-toggle="dropdown">Services</a>
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="manpower.html">Manpower Consultancy</a></li>
-                <li><a class="dropdown-item" href="recruitment.html">Recruitment & Staffing</a></li>
-                <li><a class="dropdown-item" href="payroll.html">Payroll & HR Advisory</a></li>
-                <li><a class="dropdown-item" href="realestate.html">Real Estate Services</a></li>
+                <li><a class="dropdown-item" href="manpower.html">Manpower</a></li>
+                <li><a class="dropdown-item" href="recruitment.html">Recruitment</a></li>
+                <li><a class="dropdown-item" href="payroll.html">Payroll</a></li>
+                <li><a class="dropdown-item" href="realestate.html">Real Estate</a></li>
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -142,149 +96,140 @@
       </div>
     </nav>
 
- <section class="hero-section d-flex align-items-center"  id="section_1"   style="height: 500px;" >
-      <div class="container" >
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" id="section_1" style="height:500px;">
+      <div class="container">
         <div class="row align-items-center">
-            <!-- Left Side Text -->
-            <div class="col-lg-6 col-12">
-                <!-- <h1 class="text-white"></h1> -->
-                <h6 class="text-white">Guiding You Towards the Right Property Decisions</h6>
+          <div class="col-lg-6 col-12">
+            <h6 class="text-white">Connecting Talent with Opportunities Across Hyderabad</h6>
+          </div>
+          <div class="col-lg-6 col-12 text-center">
+            <img src="images/Hrconsultancy/55.png" alt="Recruitment Vector" class="img-fluid hero-vector">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 style="color:#13547a;">About Recruitment & Staffing</h2>
+        <p class="mt-3">
+          At <strong>N Consulting Solutions</strong>, we specialize in connecting organizations with the right talent.  
+          Our recruitment services include talent acquisition, executive search, temporary and permanent staffing, 
+          and HR advisory to ensure your business has the workforce it needs to succeed.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="service-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5" style="color:#13547a;">Our Recruitment Services</h2>
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <div class="service-card text-center p-4 border rounded shadow-sm">
+              <i class="bi-person-badge fs-1 mb-3 text-primary"></i>
+              <h5>Talent Acquisition</h5>
+              <p>Finding candidates who fit your organizational culture and goals, ensuring long-term success.</p>
             </div>
-            <!-- Right Side Image -->
-            <div class="col-lg-6 col-12 text-center">
-                <img src="images/Hrconsultancy/55.png" alt="HR Real Estate Vector" class="img-fluid hero-vector">
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card text-center p-4 border rounded shadow-sm">
+              <i class="bi-search fs-1 mb-3 text-primary"></i>
+              <h5>Executive Search</h5>
+              <p>Headhunting for leadership and senior management roles with top industry professionals.</p>
             </div>
-        </div>
-    </div>
-</section>
+          </div>
 
+          <div class="col-md-4">
+            <div class="service-card text-center p-4 border rounded shadow-sm">
+              <i class="bi-people fs-1 mb-3 text-primary"></i>
+              <h5>Temporary & Permanent Staffing</h5>
+              <p>Flexible staffing solutions for projects or full-time hires to meet your business needs.</p>
+            </div>
+          </div>
 
-<!-- Intro Section -->
-<section class="py-5">
-  <div class="container text-center">
-    <h2 style="color:#13547a;">About Recruitment Consultancy</h2>
-    <p class="mt-3">
-      We specialize in helping organizations find the right people, at the right time.  
-      Our manpower consultancy services are designed to streamline recruitment, staffing,  
-      and workforce management for businesses of all sizes.  
-      Whether you are a startup or a large enterprise, we customize our services to meet your specific workforce needs.
-    </p>
-  </div>
-</section>
-<!-- Services Section -->
-<section class="service-section py-5">
-  <div class="container">
-    <h2 class="text-center mb-5" style="color:#13547a;">Our Services</h2>
-    <div class="row g-4">
-      
-      <!-- Talent Acquisition -->
-      <div class="col-md-4">
-        <div class="service-card text-center p-4 border rounded shadow-sm">
-          <i class="bi-person-badge fs-1 mb-3 text-primary"></i>
-          <h5>Talent Acquisition</h5>
-          <p>We help businesses attract, source, and recruit the right candidates 
-             who align with organizational goals and culture.</p>
-        </div>
-      </div>
+          <div class="col-md-4">
+            <div class="service-card text-center p-4 border rounded shadow-sm">
+              <i class="bi-cash-coin fs-1 mb-3 text-primary"></i>
+              <h5>Payroll & Compliance</h5>
+              <p>Accurate payroll management and statutory compliance to simplify HR operations.</p>
+            </div>
+          </div>
 
-      <!-- Executive Search -->
-      <div class="col-md-4">
-        <div class="service-card text-center p-4 border rounded shadow-sm">
-          <i class="bi-search fs-1 mb-3 text-primary"></i>
-          <h5>Executive Search</h5>
-          <p>Specialized headhunting for leadership and senior management roles, 
-             ensuring you get top industry professionals.</p>
+          <div class="col-md-4">
+            <div class="service-card text-center p-4 border rounded shadow-sm">
+              <i class="bi-briefcase fs-1 mb-3 text-primary"></i>
+              <h5>HR Advisory</h5>
+              <p>Strategic consulting to enhance HR policies, engagement, and organizational efficiency.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card text-center p-4 border rounded shadow-sm">
+              <i class="bi-lightbulb fs-1 mb-3 text-primary"></i>
+              <h5>Training & Development</h5>
+              <p>Upskilling programs designed to improve employee performance and team productivity.</p>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <!-- Temporary & Permanent Staffing -->
-      <div class="col-md-4">
-        <div class="service-card text-center p-4 border rounded shadow-sm">
-          <i class="bi-people fs-1 mb-3 text-primary"></i>
-          <h5>Temporary & Permanent Staffing</h5>
-          <p>Flexible workforce solutions — whether you need short-term project staff 
-             or full-time permanent employees.</p>
+    <!-- Why Choose Us Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5" style="color:#13547a;">Why Choose N Consulting Solutions</h2>
+        <div class="row g-4">
+          <div class="col-md-3 text-center">
+            <i class="bi-award fs-1 text-primary mb-3"></i>
+            <h5>Expertise</h5>
+            <p>Years of experience in connecting businesses with the right talent.</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <i class="bi-clock fs-1 text-primary mb-3"></i>
+            <h5>Quick Hiring</h5>
+            <p>Fast recruitment process with access to a large talent pool.</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <i class="bi-shield-check fs-1 text-primary mb-3"></i>
+            <h5>Trusted Partner</h5>
+            <p>Reliable recruitment services trusted by leading organizations.</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <i class="bi-person-hearts fs-1 text-primary mb-3"></i>
+            <h5>Client Focused</h5>
+            <p>Tailored staffing solutions designed to meet your business needs.</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Payroll & Compliance -->
-      <div class="col-md-4">
-        <div class="service-card text-center p-4 border rounded shadow-sm">
-          <i class="bi-cash-coin fs-1 mb-3 text-primary"></i>
-          <h5>Payroll & Compliance</h5>
-          <p>Complete payroll outsourcing and statutory compliance to 
-             simplify HR operations and ensure accuracy.</p>
-        </div>
+    <!-- Call to Action Section -->
+    <section class="cta-section text-white text-center" style="background:#13547a; padding:60px 0;">
+      <div class="container">
+        <h2>Looking for Reliable Recruitment Solutions?</h2>
+        <p class="mt-3 mb-4">Let <strong>N Consulting Solutions</strong> help you hire the best talent for your organization.</p>
+        <a href="contact.html" class="btn btn-light btn-lg">Get in Touch</a>
       </div>
-
-      <!-- HR Advisory -->
-      <div class="col-md-4">
-        <div class="service-card text-center p-4 border rounded shadow-sm">
-          <i class="bi-briefcase fs-1 mb-3 text-primary"></i>
-          <h5>HR Advisory</h5>
-          <p>Strategic HR consulting to improve policies, employee engagement, 
-             and organizational efficiency.</p>
-        </div>
-      </div>
-
-      <!-- Training & Development -->
-      <div class="col-md-4">
-        <div class="service-card text-center p-4 border rounded shadow-sm">
-          <i class="bi-lightbulb fs-1 mb-3 text-primary"></i>
-          <h5>Training & Development</h5>
-          <p>Customized training programs designed to upskill employees 
-             and enhance team productivity.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Why Choose Us Section -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5" style="color:#13547a;">Why Choose Us</h2>
-    <div class="row g-4">
-      <div class="col-md-3 text-center">
-        <i class="bi-award fs-1 text-primary mb-3"></i>
-        <h5>Expertise</h5>
-        <p>Years of experience in matching businesses with the right workforce.</p>
-      </div>
-      <div class="col-md-3 text-center">
-        <i class="bi-clock fs-1 text-primary mb-3"></i>
-        <h5>Quick Hiring</h5>
-        <p>Fast turnaround time with access to a large talent pool.</p>
-      </div>
-      <div class="col-md-3 text-center">
-        <i class="bi-shield-check fs-1 text-primary mb-3"></i>
-        <h5>Trusted Partner</h5>
-        <p>Reliable consultancy services trusted by leading organizations.</p>
-      </div>
-      <div class="col-md-3 text-center">
-        <i class="bi-person-hearts fs-1 text-primary mb-3"></i>
-        <h5>Client Focused</h5>
-        <p>Personalized solutions designed to meet your business needs.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-top">
         <div class="container">
           <div class="row">
-
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
               <div class="footer-brand">
-                <img src="images/Hrconsultancy/logo1.png" alt="Logo" class="footer-logo">
+                <img src="images/Hrconsultancy/logo1.png" alt="N Consulting Solutions Logo" class="footer-logo">
                 <p>Your trusted partner for recruitment, staffing & HR solutions.</p>
               </div>
             </div>
-
-            <div class="col-lg-2 col-md-6 mb-4">
+            <div class="col-12 col-md-6 col-lg-2 mb-4">
               <h5>Quick Links</h5>
               <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
@@ -293,17 +238,15 @@
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
-
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
               <h5>Contact</h5>
               <ul class="footer-contact">
                 <li><i class="bi-telephone"></i> <a href="tel:9492393111">9492393111</a></li>
-                <li><i class="bi-envelope"></i> <a href="mailto:info@hrconsultancy.com">info@hrconsultancy.com</a></li>
+                <li><i class="bi-envelope"></i> <a href="mailto:info@nconsultingsolutions.com">info@nconsultingsolutions.com</a></li>
                 <li><i class="bi-geo-alt"></i> Hyderabad, India</li>
               </ul>
             </div>
-
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
               <h5>Follow Us</h5>
               <div class="social-icons">
                 <a href="#" class="bi-facebook"></a>
@@ -312,53 +255,21 @@
                 <a href="#" class="bi-instagram"></a>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-      <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919492393111" target="_blank" class="whatsapp-float">
-    <i class="bi bi-whatsapp"></i>
-</a>
 
-<style>
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
-}
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    text-decoration: none;
-}
-</style>
-
-
+      <a href="https://wa.me/919492393111" target="_blank" class="whatsapp-float"><i class="bi bi-whatsapp"></i></a>
 
       <div class="footer-bottom text-center">
-        <p>© 2025 HR Consultancy. All Rights Reserved.</p>
-        <p>Design by <a href="https://www.senetra.in/" target="_blank">Senetra Technologies</a></p>
+        <p>© 2025 N Consulting Solutions. All Rights Reserved. Design by <a href="https://www.senetra.in/" target="_blank">Senetra Technologies</a></p>
       </div>
     </footer>
 
-
-
-<script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/custom.js"></script>  </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>

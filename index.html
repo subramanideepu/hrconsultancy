@@ -132,6 +132,25 @@
     transform: scale(1.1);
     text-decoration: none;
 }
+/* Back to Top Button */
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#backToTop i {
+    font-size: 40px;
+    color: #13547a;
+}
+
+#backToTop:hover {
+    transform: scale(1.1);
+}
 
       
       </style>
@@ -165,10 +184,10 @@
             Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-            <li><a class="dropdown-item" href="manpower.html">Manpower Consultancy</a></li>
-            <li><a class="dropdown-item" href="recruitment.html">Recruitment & Staffing</a></li>
-            <li><a class="dropdown-item" href="payroll.html">Payroll & HR Advisory</a></li>
-            <li><a class="dropdown-item" href="realestate.html">Real Estate Services</a></li>
+            <li><a class="dropdown-item" href="manpower.html">Manpower</a></li>
+            <li><a class="dropdown-item" href="recruitment.html">Recruitment</a></li>
+            <li><a class="dropdown-item" href="payroll.html">Payroll</a></li>
+            <li><a class="dropdown-item" href="realestate.html">Real Estate</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -630,6 +649,12 @@
 </a>
 
 
+<!-- Back to Top Button -->
+<a href="index.html" id="backToTop" title="Go to top">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+</a>
+
+
    <div class="footer-bottom text-center">
         <p>© 2025 HR Consultancy. All Rights Reserved.
         Design by <a href="https://www.senetra.in/" target="_blank">Senetra Technologies</a></p>
@@ -641,5 +666,23 @@
         <script src="js/jquery.sticky.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
+<script>
+        $(document).ready(function(){
+    // Show button when scrolling down 200px
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('#backToTop').fadeIn();
+        } else {
+            $('#backToTop').fadeOut();
+        }
+    });
+
+    // Smooth scroll to top
+    $('#backToTop').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 800); // 800ms smooth animation
+    });
+});
+</script>
     </body>
 </html>
