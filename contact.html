@@ -24,41 +24,150 @@
         <style>
 body {font-family: 'Montserrat', sans-serif;}
 
-/* Footer */
+/* Footer Base */
 .site-footer {
-  background: #74c7c7;
+  background: rgb(163,118,161);
   color: #fff;
   font-size: 15px;
 }
-.footer-top {padding: 50px 0 30px;}
-.footer-brand .footer-logo {height: 80px; margin-bottom: 15px;}
-.footer-brand p {max-width: 250px; line-height: 1.6;}
-.footer-links, .footer-contact {list-style: none; padding: 0;}
-.footer-links li, .footer-contact li {margin-bottom: 10px;}
-.footer-links a, .footer-contact a {color: #fff; text-decoration: none;}
-.footer-links a:hover, .footer-contact a:hover {color: black;}
-.footer-contact i {margin-right: 8px; color: black;}
-.social-icons a {display: inline-block; color: #fff; font-size: 20px; margin-right: 12px; transition: 0.3s;}
-.social-icons a:hover {color: black;}
+
+.footer-top {
+  padding: 50px 0 30px;
+  height: 300px;
+}
+
+.footer-brand .footer-logo {
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  max-width: 250px;
+  line-height: 1.6;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: black;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+  color: black;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: black;
+}
+
 .footer-bottom {
   background: rgba(0,0,0,0.2);
   padding: 15px 0;
   margin-top: 20px;
   font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
-@media(min-width:768px){.footer-bottom{flex-direction:row; justify-content:space-between;}}
+
 /* WhatsApp Floating */
 .whatsapp-float {
-  position: fixed; width:60px; height:60px; bottom:20px; right:20px; background:#25d366;
-  color:#fff; border-radius:50%; text-align:center; font-size:30px; z-index:1000;
-  display:flex; justify-content:center; align-items:center; box-shadow:2px 2px 5px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
 }
-.whatsapp-float:hover {transform: scale(1.1); text-decoration:none;}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+/* Back to Top */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#backToTop i {
+    font-size: 40px;
+    color: rgb(108,60,106);
+}
+#backToTop:hover {
+    transform: scale(1.1);
+}
+
+/* ✅ Footer Responsive Fix */
+@media (max-width: 991px) {
+  .site-footer .footer-top .row > div {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer .footer-top {
+    text-align: center;
+    height: auto; /* auto height for mobile */
+    padding: 40px 15px;
+  }
+  .site-footer .footer-brand p {
+    max-width: 100%;
+    margin: 0 auto 15px;
+  }
+  .site-footer .footer-links,
+  .site-footer .footer-contact,
+  .site-footer .social-icons {
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+  .site-footer .footer-links li,
+  .site-footer .footer-contact li {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .footer-bottom p {
+    font-size: 13px;
+  }
+}
 </style>
     </head>
     
@@ -67,7 +176,7 @@ body {font-family: 'Montserrat', sans-serif;}
         <main>
 
        <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style=" background: linear-gradient(to right, #13547a, #80d0c7);">
+  <nav class="navbar navbar-expand-lg navbar-light"  style="background: linear-gradient(to right, rgb(108,60,106), rgb(141,95,141), rgb(163,118,161));">
   <div class="container">
     <a class="navbar-brand" href="index.html"><img src="images/Hrconsultancy/logo1.png" alt="Logo" style="height:70px;"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -97,12 +206,12 @@ body {font-family: 'Montserrat', sans-serif;}
         <div class="row align-items-center">
             <!-- Left Side Text -->
             <div class="col-lg-6 col-12" style="margin-top: 50px;">
-                <h1 class="text-white">Contact US</h1>
+                <h1 class="text-white" >Contact US</h1>
                 <!-- <h6 class="text-white">Payroll & Compliance Consultancy</h6> -->
             </div>
             <!-- Right Side Image -->
             <div class="col-lg-6 col-12 text-center">
-                <img src="images/Hrconsultancy/contact1.png" alt="HR Real Estate Vector" class="img-fluid hero-vector"  style="height: 350px; margin-top: 50px;">
+                <img src="images/Hrconsultancy/Hrconsultancy/contact1.png" alt="HR Real Estate Vector" class="img-fluid hero-vector"  style="height: 350px; margin-top: 50px;">
             </div>
         </div>
     </div>
@@ -110,8 +219,8 @@ body {font-family: 'Montserrat', sans-serif;}
 
 
       <!-- CONTACT -->
-<section class="section-padding section-bg py-5">
-  <div class="container">
+<section class="section-padding section-bg py-5" style="background-color: rgb(224,209,223);">
+  <div class="container" >
     <div class="row">
       <div class="col-12 mb-4"><h3>We'd love to hear from you</h3></div>
       
@@ -123,7 +232,7 @@ body {font-family: 'Montserrat', sans-serif;}
             <div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required></div>
             <div class="col-12"><input type="text" class="form-control" placeholder="Subject" required></div>
             <div class="col-12"><textarea class="form-control" rows="4" placeholder="Message"></textarea></div>
-            <div class="col-12"><button class="btn btn-primary w-100">Submit</button></div>
+            <div class="col-12"><button class="btn  w-100" style="background-color: rgb(108,60,106);">Submit</button></div>
           </div>
         </form>
       </div>
@@ -146,14 +255,15 @@ body {font-family: 'Montserrat', sans-serif;}
 </section>
 
 <!-- FOOTER -->
+ <!-- Footer -->
 <footer class="site-footer">
-      <div class="footer-top" style="height: 300px;">
+  <div class="footer-top">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="footer-brand">
-            <img src="images/Hrconsultancy/logo1.png" alt="Logo" class="footer-logo">
-            <p>Your trusted partner for recruitment, staffing & HR solutions.</p>
+            <img src="images/Hrconsultancy/logo1.png" alt="N Consultancy Logo" class="footer-logo">
+            <p style="color: rgb(224,209,223);">We provide expert HR consultancy, recruitment, staffing & payrollfor businesses of all sizes.</p>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 mb-4">
@@ -168,8 +278,8 @@ body {font-family: 'Montserrat', sans-serif;}
         <div class="col-lg-3 col-md-6 mb-4">
           <h5>Contact</h5>
           <ul class="footer-contact">
-            <li><i class="bi-telephone"></i> <a href="tel:9492393111">9492393111</a></li>
-            <li><i class="bi-envelope"></i> <a href="mailto:info@hrconsultancy.com">info@hrconsultancy.com</a></li>
+            <li><i class="bi-telephone"></i> <a href="tel:9492393111">+91 9492393111</a></li>
+            <li><i class="bi-envelope"></i> <a href="mailto:info@nconsultancy.com">info@nconsultancy.com</a></li>
             <li><i class="bi-geo-alt"></i> Hyderabad, India</li>
           </ul>
         </div>
@@ -185,11 +295,21 @@ body {font-family: 'Montserrat', sans-serif;}
       </div>
     </div>
   </div>
-  
-  <a href="https://wa.me/919492393111" target="_blank" class="whatsapp-float"><i class="bi bi-whatsapp"></i></a>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919492393111" target="_blank" class="whatsapp-float">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <a href="#top" id="backToTop" title="Go to top">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </a>
 
   <div class="footer-bottom text-center">
-    <p>© 2025 HR Consultancy. All Rights Reserved.Design by <a href="https://www.senetra.in/" target="_blank">Senetra Technologies</a></p>
+    <p style="color: rgb(224,209,223);">© 2025 N Consultancy Solutions. All Rights Reserved.
+      Design by <a href="https://www.senetra.in/" target="_blank">Senetra Technologies</a>
+    </p>
   </div>
 </footer>
 

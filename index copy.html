@@ -1,31 +1,27 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>N Consulting Solutions</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">        
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">                        
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-icons.css" rel="stylesheet">        
-<link href="css/templatemo-topic-listing.css" rel="stylesheet">  
-
-<style>
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-/* Footer Base */
-.site-footer {
-  background: rgb(163,118,161);
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>N Consulting Solutions</title>
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">        
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">          
+        <style>
+         .site-footer {
+  background: rgb(163,118,161);   /* Same as navbar */
   color: #fff;
   font-size: 15px;
 }
 
 .footer-top {
   padding: 50px 0 30px;
-  height: 300px;
 }
 
 .footer-brand .footer-logo {
@@ -77,15 +73,43 @@ body {
   color: black;
 }
 
+
+.hero-section {
+  padding: 60px 20px;
+  /* background: linear-gradient(to right, #13547a, #80d0c7); */
+}
+
+.hero-section h1, .hero-section h6 {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .hero-vector {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
 .footer-bottom {
   background: rgba(0,0,0,0.2);
   padding: 15px 0;
   margin-top: 20px;
   font-size: 14px;
-  text-align: center;
+  margin-left: -20px;
 }
 
-/* WhatsApp Floating */
+
+
+/* ✅ Mobile Responsive */
+@media (max-width: 767px) {
+  /* .footer-bottom {
+    text-align: center;
+  } */
+  .footer-bottom p {
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+}
+
 .whatsapp-float {
     position: fixed;
     width: 60px;
@@ -108,10 +132,9 @@ body {
     transform: scale(1.1);
     text-decoration: none;
 }
-
-/* Back to Top */
+/* Back to Top Button */
 #backToTop {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
     bottom: 20px;
     left: 20px;
@@ -119,99 +142,84 @@ body {
     cursor: pointer;
     transition: transform 0.3s;
 }
+
 #backToTop i {
     font-size: 40px;
     color: rgb(108,60,106);
 }
+
 #backToTop:hover {
     transform: scale(1.1);
 }
 
-/* ✅ Footer Responsive Fix */
-@media (max-width: 991px) {
-  .site-footer .footer-top .row > div {
-    margin-bottom: 25px;
-  }
-}
-
-@media (max-width: 767px) {
-  .site-footer .footer-top {
-    text-align: center;
-    height: auto; /* auto height for mobile */
-    padding: 40px 15px;
-  }
-  .site-footer .footer-brand p {
-    max-width: 100%;
-    margin: 0 auto 15px;
-  }
-  .site-footer .footer-links,
-  .site-footer .footer-contact,
-  .site-footer .social-icons {
-    display: inline-block;
-    padding-left: 0;
-    margin-bottom: 15px;
-  }
-  .site-footer .footer-links li,
-  .site-footer .footer-contact li {
-    display: block;
-    margin-bottom: 8px;
-  }
-  .footer-bottom p {
-    font-size: 13px;
-  }
-}
-</style>
-</head>
-<body id="top">
-
-<main>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light"  style="background: linear-gradient(to right, rgb(108,60,106), rgb(141,95,141), rgb(163,118,161));">
-    <div class="container">    
-      <a class="navbar-brand" href="index.html">
-        <img src="images/Hrconsultancy/logo1.png" alt="Logo" style="height:60px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#navbarNav" aria-controls="navbarNav" 
-              aria-expanded="false" aria-label="Toggle navigation">
+      
+      </style>
+    </head>
+    <body id="top">
+        
+        <main>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" background: linear-gradient(to right, rgb(108,60,106) rgb(108,60,106) );"> -->
+     <nav class="navbar navbar-expand-lg navbar-light"  style="background: linear-gradient(to right, rgb(108,60,106), rgb(141,95,141), rgb(163,118,161));">
+     <div class="container">    
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+     <img src="images/Hrconsultancy/logo1.png" alt="Logo" style="height:60px;">
+    </a>
+     <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" aria-controls="navbarNav" 
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" 
-               role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <li><a class="dropdown-item" href="manpower.html">Manpower</a></li>
-              <li><a class="dropdown-item" href="recruitment.html">Recruitment</a></li>
-              <li><a class="dropdown-item" href="payroll.html">Payroll</a></li>
-              <li><a class="dropdown-item" href="realestate.html">Real Estate</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+        </button>
+     <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto"> <!-- ms-auto = push links right -->
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" 
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="manpower.html">Manpower</a></li>
+            <li><a class="dropdown-item" href="recruitment.html">Recruitment</a></li>
+            <li><a class="dropdown-item" href="payroll.html">Payroll</a></li>
+            <li><a class="dropdown-item" href="realestate.html">Real Estate</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section d-flex align-items-center" id="section_1" style="background: linear-gradient(to right, rgb(108,60,106), rgb(141,95,141), rgb(163,118,161));" >
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-12" style="margin-top: 50px;">
-          <h1 class="text-white">Your Trusted HR Partner</h1>
-          <h6 class="text-white">Connecting People & Businesses with Confidence</h6>
+ <!--<section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h1 class="text-white text-center">Your Trusted HR & Real Estate Partner</h1>
+                            <h6 class="text-center">Connecting People, Businesses & Properties with Confidence</h6>                      
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+   <section class="hero-section d-flex align-items-center" id="section_1" style="background: linear-gradient(to right, rgb(108,60,106), rgb(141,95,141), rgb(163,118,161));" >
+   <div class="container">
+   <div class="row align-items-center">
+  <!-- Left Side Text -->
+   <div class="col-lg-6 col-12" style="margin-top: 50px;">
+    <h1 class="text-white">Your Trusted HR Partner</h1>
+    <h6 class="text-white">Connecting People & Businesses with Confidence</h6>
+</div>
+            <!-- Right Side Image -->
+            <div class="col-lg-6 col-12 text-center">
+                <img src="images/Hrconsultancy/3_1.png" alt="HR Real Estate Vector"  class="img-fluid hero-vector">
+            </div>
         </div>
-        <div class="col-lg-6 col-12 text-center">
-          <img src="images/Hrconsultancy/3_1.png" alt="HR Real Estate Vector"  class="img-fluid hero-vector">
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
 <section class="about-section py-5">
     <div class="container">
@@ -231,7 +239,8 @@ body {
     With expertise in <b>recruitment, payroll management, executive search, and workforce outsourcing,</b>
     we help organizations streamline their HR operations and build a strong, sustainable workforce.
 </p>
-     <div class="d-flex align-items-center mt-4">
+
+                   <div class="d-flex align-items-center mt-4">
                     <!-- Read More Button -->
                     <!-- <a href="about.html" class="btn me-3" style="background-color: #80d0c7; color:#fff;">Read More</a> -->
                     <!-- Social Media Icons -->
@@ -585,71 +594,71 @@ body {
 </section>
 </main>
  <!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="footer-brand">
-            <img src="images/Hrconsultancy/logo1.png" alt="N Consultancy Logo" class="footer-logo">
-            <p style="color: rgb(224,209,223);">We provide expert HR consultancy, recruitment, staffing, payroll, and real estate solutions for businesses of all sizes.</p>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 mb-4">
-          <h5>Quick Links</h5>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h5>Contact</h5>
-          <ul class="footer-contact">
-            <li><i class="bi-telephone"></i> <a href="tel:9492393111">+91 9492393111</a></li>
-            <li><i class="bi-envelope"></i> <a href="mailto:info@nconsultancy.com">info@nconsultancy.com</a></li>
-            <li><i class="bi-geo-alt"></i> Hyderabad, India</li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h5>Follow Us</h5>
-          <div class="social-icons">
-            <a href="#" class="bi-facebook"></a>
-            <a href="#" class="bi-twitter"></a>
-            <a href="#" class="bi-linkedin"></a>
-            <a href="#" class="bi-instagram"></a>
+    <footer class="site-footer">
+      <div class="footer-top" style="height: 300px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="footer-brand">
+                <img src="images/Hrconsultancy/logo1.png" alt="N Consultancy Logo" class="footer-logo">
+                <p style="color: rgb(224,209,223);">We provide expert HR consultancy, recruitment, staffing, payroll, and real estate solutions for businesses of all sizes.</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+              <h5>Quick Links</h5>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5>Contact</h5>
+              <ul class="footer-contact">
+                <li><i class="bi-telephone"></i> <a href="tel:9492393111">+91 9492393111</a></li>
+                <li><i class="bi-envelope"></i> <a href="mailto:info@nconsultancy.com">info@nconsultancy.com</a></li>
+                <li><i class="bi-geo-alt"></i> Hyderabad, India</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                <a href="#" class="bi-facebook"></a>
+                <a href="#" class="bi-twitter"></a>
+                <a href="#" class="bi-linkedin"></a>
+                <a href="#" class="bi-instagram"></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/919492393111" target="_blank" class="whatsapp-float">
-    <i class="bi bi-whatsapp"></i>
-  </a>
+      <!-- WhatsApp Floating Button -->
+      <a href="https://wa.me/919492393111" target="_blank" class="whatsapp-float">
+        <i class="bi bi-whatsapp"></i>
+      </a>
 
-  <!-- Back to Top -->
-  <a href="#top" id="backToTop" title="Go to top">
+       <!-- Back to Top Button -->
+<a href="index.html" id="backToTop" title="Go to top">
     <i class="bi bi-arrow-up-circle-fill"></i>
-  </a>
+</a>
 
-  <div class="footer-bottom text-center">
-    <p style="color: rgb(224,209,223);">© 2025 N Consultancy Solutions. All Rights Reserved.
-      Design by <a href="https://www.senetra.in/" target="_blank">Senetra Technologies</a>
-    </p>
-  </div>
-</footer>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery.sticky.js"></script>
-<script src="js/click-scroll.js"></script>
-<script src="js/custom.js"></script>
+      <div class="footer-bottom text-center">
+        <p style="color: rgb(224,209,223);">© 2025 N Consultancy Solutions. All Rights Reserved.
+        Design by <a href="https://www.senetra.in/" target="_blank">Senetra Technologies</a></p>
+      </div>
+    </footer>
+   
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
 <script>
-$(document).ready(function(){
-    // Show back-to-top button
+        $(document).ready(function(){
+    // Show button when scrolling down 200px
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
             $('#backToTop').fadeIn();
@@ -657,13 +666,13 @@ $(document).ready(function(){
             $('#backToTop').fadeOut();
         }
     });
-    // Smooth scroll
+
+    // Smooth scroll to top
     $('#backToTop').click(function(e) {
         e.preventDefault();
-        $('html, body').animate({scrollTop: 0}, 800);
+        $('html, body').animate({scrollTop: 0}, 800); // 800ms smooth animation
     });
 });
 </script>
-
-</body>
+    </body>
 </html>
