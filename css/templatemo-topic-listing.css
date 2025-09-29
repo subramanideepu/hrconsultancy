@@ -678,6 +678,8 @@ blockquote {
   height: inherit;
 }
 
+
+
 .custom-block-topics-listing .custom-block-image {
   width: 200px;
 }
@@ -1153,3 +1155,11 @@ blockquote {
   }
 }
 
+#logo_back{
+height:80px;  background-color: #fff;   /* White background */
+  padding: 10px;            
+  border: 2px solid #ccc;   
+  border-radius: 6px;       
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  display: inline-block;
+}
